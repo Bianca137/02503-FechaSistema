@@ -16,8 +16,6 @@
 package org.japo.java.main;
 
 import java.util.Calendar;
-import java.util.Locale;
-import java.util.Scanner;
 import java.util.Random;
 
 /**
@@ -26,18 +24,13 @@ import java.util.Random;
  */
 public class Main {
 
-   
     public static final Random RND = new Random();
 
     public static void main(String[] args) {
 
         Calendar cal = Calendar.getInstance();
-        
-         System.out.println("Fecha del sistema.......: " + cal.get(cal.DAY_OF_MONTH) + "/" + (cal.get(cal.MONTH) + 1) + "/" + cal.get(cal.YEAR));
-         
-         
-         //otra forma
-         //printf("Fecha del sistema....: %02d/%02d%d%n", d, m, a);
+
+        System.out.println("Fecha del sistema.......: " + cal.get(Calendar.DAY_OF_MONTH) + "/" + (cal.get(Calendar.MONTH) + 1) + "/" + cal.get(Calendar.YEAR));
 
     }
 
